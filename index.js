@@ -26,6 +26,10 @@ document.getElementById('add-btn').addEventListener('click', function (){
                });
           }
 
-       
+          for(const button of doneBtn){
+               button.addEventListener('click', function(e){
+                    e.target.parentNode.parentNode.style.textDecoration = 'line-through';
+               });
+          }
      }
 });
